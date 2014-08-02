@@ -12,6 +12,12 @@ script AppDelegate
 	-- IBOutlets
 	property theWindow : missing value
 	
+    property theName : ""
+    
+    on buttonClicked_(sender)
+        display alert "Hello there " & theName
+    end buttonClicked_
+    
 	on applicationWillFinishLaunching_(aNotification)
 		-- Insert code here to initialize your application before any files are opened 
 	end applicationWillFinishLaunching_
